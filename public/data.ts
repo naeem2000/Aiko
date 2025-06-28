@@ -1,0 +1,43 @@
+import { NavLinks } from '@/modules/types';
+
+export const navLinks: NavLinks = [
+	{
+		link: 'About',
+		url: '#about',
+	},
+	{
+		link: 'Gallery',
+		url: '#gallery',
+	},
+	{
+		link: 'Visit Us',
+		url: '#visit',
+	},
+];
+
+export const menu = [
+	{
+		item: 'MENU ITEM 1',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
+		price: 'R00.00',
+	},
+	{
+		item: 'MENU ITEM 2',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
+		price: 'R00.00',
+	},
+	{
+		item: 'MENU ITEM 3',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
+		price: 'R00.00',
+	},
+	{
+		item: 'MENU ITEM 4',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
+		price: 'R00.00',
+	},
+];
