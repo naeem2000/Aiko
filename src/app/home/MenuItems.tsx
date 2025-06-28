@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
 import { menu } from '../../../public/data';
 import Button from '@/stories/Button';
+import Image from 'next/image';
+import React from 'react';
 
 export default function MenuItems() {
 	return (

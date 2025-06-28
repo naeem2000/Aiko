@@ -1,4 +1,4 @@
-import { NavLinks } from '@/modules/types';
+import { Menu, NavLinks, Reservation } from '@/modules/types';
 
 export const navLinks: NavLinks = [
 	{
@@ -15,7 +15,12 @@ export const navLinks: NavLinks = [
 	},
 ];
 
-export const menu = [
+export const menuLink = {
+	link: 'Menu',
+	url: '#menu',
+};
+
+export const menu: Menu = [
 	{
 		item: 'MENU ITEM 1',
 		description:
@@ -39,5 +44,23 @@ export const menu = [
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
 		price: 'R00.00',
+	},
+];
+
+export const reservation: Reservation = [
+	{
+		url: '/aiko-plus',
+		image: '/images/aiko-plus.png',
+		buttonText: 'Aiko Plus',
+	},
+	{
+		url: '/aiko-on-bree',
+		image: '/images/aiko-on-bree.png',
+		buttonText: 'Aiko On Bree',
+	},
+	{
+		url: '/aiko-riverland',
+		image: '/images/aiko-riverland.png',
+		buttonText: 'Aiko Sushi Riverland',
 	},
 ];
