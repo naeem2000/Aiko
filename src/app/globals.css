@@ -24,7 +24,9 @@
 	--carattere: 'Carattere', sans-serif;
 	--poppins: 'Poppins', sans-serif;
 
+	/* Backgrounds */
 	--landing-bg: url('/images/landing-hero.png');
+	--plus-bg: url('/images/plus-hero.png');
 }
 
 html {

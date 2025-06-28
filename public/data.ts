@@ -15,6 +15,11 @@ export const navLinks: NavLinks = [
 	},
 ];
 
+export const menuLink = {
+	link: 'Menu',
+	url: '#menu',
+};
+
 export const menu: Menu = [
 	{
 		item: 'MENU ITEM 1',

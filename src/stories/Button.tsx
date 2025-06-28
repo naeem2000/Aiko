@@ -12,7 +12,7 @@ export default function Button({ color, label, className, onClick }: Props) {
 		color === 'gold' ? 'bg-[var(--gold)]' : 'bg-[var(--blue)]';
 
 	const baseButtonStyles: string =
-		'cursor-pointer min-w-[140px] px-[10px] py-4 rounded-[5px] font-semibold text-[14.09px] leading-[100%] tracking-[3%] text-white';
+		'cursor-pointer min-w-[140px] px-[10px] py-4 rounded-[5px] font-semibold text-[14.09px] leading-[100%] tracking-[3%] text-white hover:opacity-[0.7] transition duration-200 ease';
 
 	return (
 		<button
