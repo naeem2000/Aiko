@@ -1,3 +1,4 @@
+import Reservation from '@/stories/Reservation';
 import Gallery from './home/Gallery';
 import About from './home/About';
 import Hero from './home/Hero';
@@ -8,6 +9,7 @@ export default function Home() {
 			<Hero />
 			<About />
 			<Gallery />
+			<Reservation />
 		</main>
 	);
 }
