@@ -26,11 +26,8 @@ export default function ReviewsSlider() {
 				>
 					{reviews.map((item, index) => {
 						return (
-							<SwiperSlide>
-								<div
-									className='flex items-center justify-start w-full flex-col h-[280px] md:h-[250px]'
-									key={index}
-								>
+							<SwiperSlide key={index}>
+								<div className='flex items-center justify-start w-full flex-col h-[280px] md:h-[250px]'>
 									<Image
 										src={item.image}
 										alt={item.name}
