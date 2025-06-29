@@ -14,3 +14,9 @@ export type Reservation = {
 	image: string;
 	buttonText: string;
 }[];
+
+export type Reviews = {
+	image: string;
+	name: string;
+	review: string;
+}[];
