@@ -16,7 +16,15 @@ export type Reservation = {
 }[];
 
 export type Reviews = {
-	image: string;
+	rate: number;
 	name: string;
 	review: string;
 }[];
+
+export type SocialIcons = {
+	url: string;
+	alt: string;
+	image: string;
+}[];
+
+export type ButtonColors = 'red' | 'blue' | 'gold';

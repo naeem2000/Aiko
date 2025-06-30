@@ -1,4 +1,10 @@
-import { Menu, NavLinks, Reservation, Reviews } from '@/modules/types';
+import {
+	Menu,
+	NavLinks,
+	Reservation,
+	Reviews,
+	SocialIcons,
+} from '@/modules/types';
 
 export const navLinks: NavLinks = [
 	{
@@ -67,21 +73,39 @@ export const reservation: Reservation = [
 
 export const reviews: Reviews = [
 	{
-		image: '/reviewers/review-1.png',
+		rate: 4,
 		name: 'Persons Name',
 		review:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
 	},
 	{
-		image: '/reviewers/review-1.png',
+		rate: 1,
 		name: 'Persons Name',
 		review:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
 	},
 	{
-		image: '/reviewers/review-1.png',
+		rate: 3,
 		name: 'Persons Name',
 		review:
 			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
+	},
+];
+
+export const socials: SocialIcons = [
+	{
+		image: '/social-icons/instagram.svg',
+		alt: 'Instagram',
+		url: '',
+	},
+	{
+		image: '/social-icons/facebook.svg',
+		alt: 'Facebook',
+		url: '',
+	},
+	{
+		image: '/social-icons/linkedIn.svg',
+		alt: 'LinkedIn',
+		url: '',
 	},
 ];

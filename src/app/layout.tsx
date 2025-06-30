@@ -1,4 +1,5 @@
 import { Poppins } from 'next/font/google';
+import Footer from '@/stories/Footer';
 import type { Metadata } from 'next';
 import Nav from '@/stories/Nav';
 import './globals.css';
@@ -25,6 +26,7 @@ export default function RootLayout({
 			<body className={`${poppins.className} antialiased`}>
 				<Nav />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

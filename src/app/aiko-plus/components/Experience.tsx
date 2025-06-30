@@ -17,7 +17,8 @@ export default function Experience() {
 					className='object-contain'
 				/>
 				<TextCard
-					variant='dark'
+					variant='black'
+					buttonColor='gold'
 					heading='Taste Preparation'
 					subHeading='TRADITIONAL & MODERN'
 					text='Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.'

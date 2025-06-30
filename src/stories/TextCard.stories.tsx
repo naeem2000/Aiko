@@ -19,6 +19,7 @@ export const Default: Story = {
 		subHeading: 'subHeading',
 		text: 'text',
 		variant: 'light',
+		buttonColor: 'blue',
 		onClick: fn(),
 	},
 };

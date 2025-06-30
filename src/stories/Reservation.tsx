@@ -12,7 +12,7 @@ export default function Reservation() {
 	return (
 		<section className='py-20'>
 			<div className='max-width'>
-				<h2 className='text-center font-medium text-[50px] leading-[100%] tracking-[6%]'>
+				<h2 className='text-center font-bold text-4xl xl:text-[50px] leading-[100%] tracking-[6%]'>
 					MAKE A RESERVATION
 				</h2>
 				<div className='flex items-center justify-center gap-5 mt-14 flex-col md:flex-row'>
@@ -27,10 +27,11 @@ export default function Reservation() {
 									<Image
 										src={item.image}
 										alt={item.buttonText}
+										className='bg-[var(--blue)] rounded-[10px]'
 										width={440}
 										height={395}
 									/>
-									<Link href={item.url} target='_blank'>
+									<Link href={item.url}>
 										<Button
 											label={item.buttonText}
 											color='gold'

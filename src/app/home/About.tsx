@@ -20,9 +20,10 @@ export default function About() {
 					className='object-contain'
 				/>
 				<TextCard
-					variant='dark'
+					variant='blue'
 					heading='Taste Preparation'
 					subHeading='TRADITIONAL & MODERN'
+					buttonColor='red'
 					text='Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.'
 				/>
 				<div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Gallery() {
 	return (
-		<section className='bg-black py-20'>
+		<section className='bg-[var(--light-peach)] py-20'>
 			<div className='max-w-7xl mx-auto flex flex-col gap-7 justify-center items-center px-4'>
 				<div className='flex gap-7 flex-wrap justify-center items-center'>
 					{['gallery-1', 'gallery-2', 'gallery-3'].map((img, index) => (
