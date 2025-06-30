@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/nextjs';
 
-import Reservation from './Reservation';
+import Footer from './Footer';
 
 const meta = {
-	component: Reservation,
-} satisfies Meta<typeof Reservation>;
+  component: Footer,
+} satisfies Meta<typeof Footer>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-	args: {},
+  args: {}
 };

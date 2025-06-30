@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function MenuItems() {
 	return (
-		<section className='bg-black mt-40'>
+		<section className='bg-black py-30'>
 			<div className='max-width flex items-start justify-center flex-wrap gap-14'>
 				<Image
 					src={'/images/menu-item.png'}

@@ -19,6 +19,8 @@
 	--red: #e41e26;
 	--blue: #1c3259;
 	--light-peach: #f5ead9;
+	--grey: #101010;
+	--border: #707070;
 
 	/* Fonts */
 	--carattere: 'Carattere', sans-serif;
@@ -39,4 +41,10 @@ html {
 	margin: 0px auto;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+input {
+	background-color: var(--white);
+	padding: 12px;
+	color: var(--grey);
 }
