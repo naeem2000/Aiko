@@ -1,8 +1,8 @@
 import {
 	Menu,
+	Reviews,
 	NavLinks,
 	Reservation,
-	Reviews,
 	SocialIcons,
 } from '@/modules/types';
 
@@ -73,22 +73,34 @@ export const reservation: Reservation = [
 
 export const reviews: Reviews = [
 	{
+		rate: 5,
+		name: 'Susan C',
+		review:
+			'We LOVED this restaurant - its food, its staff, its ambience - so much that on our very first day in Capetown we had lunch and dinner there. We have eaten all round the world and AIKO is pretty much up there with the best.',
+	},
+	{
 		rate: 4,
-		name: 'Persons Name',
+		name: 'LeighanneZA',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
+			'My favourite sushi spot in Cape Town. They never fail to impress. I think they have one of the best menus with an incredible selection. Always fresh and delicious. I would recommend booking as there are limited amount of tables.',
 	},
 	{
-		rate: 1,
-		name: 'Persons Name',
+		rate: 5,
+		name: 'Erika',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
+			'The service was great, the food was wonderful and the mood was just right I recommend aiko sushi to all even for just a lunch.',
 	},
 	{
-		rate: 3,
-		name: 'Persons Name',
+		rate: 5,
+		name: 'Hannah',
 		review:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.',
+			'This place is amazing and they will make you feel loved and happy. The food was amazing. I recommend you to go there you will never regret it.',
+	},
+	{
+		rate: 4,
+		name: 'Frank A',
+		review:
+			'I ate the most delicious sushi ever here. Shian had explained the "All you can eat" in detail. Cost point about 12,50€ per person - depending on the exchange rate. The Fried sushi are so big that I had trouble getting them in my mouth and 8 of them. Every taste was recognizable and very well seasoned. The Nigiri have twice the fish on them than in Germany.',
 	},
 ];
 

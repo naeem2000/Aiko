@@ -10,9 +10,7 @@ export default function Hero({ bg }: Props) {
 	const path = usePathname();
 	return (
 		<section
-			className={`relative bg-center bg-cover bg-no-repeat ${
-				path === '/' ? 'h-[85.9vh]' : 'h-screen'
-			}`}
+			className={`relative bg-center bg-cover bg-no-repeat h-screen`}
 			style={{ backgroundImage: `var(${bg})` }}
 		>
 			<div className='absolute right-0 left-0 bottom-0 top-0 bg-[rgb(0,0,0,0.6)] z-10' />
