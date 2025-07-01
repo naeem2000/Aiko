@@ -96,16 +96,16 @@ export const socials: SocialIcons = [
 	{
 		image: '/social-icons/instagram.svg',
 		alt: 'Instagram',
-		url: '',
+		url: 'https://www.instagram.com/aikosushi.sa/',
 	},
 	{
 		image: '/social-icons/facebook.svg',
 		alt: 'Facebook',
-		url: '',
+		url: 'https://www.facebook.com/aikosushi.sa',
 	},
-	{
-		image: '/social-icons/linkedIn.svg',
-		alt: 'LinkedIn',
-		url: '',
-	},
+	// {
+	// 	image: '/social-icons/linkedIn.svg',
+	// 	alt: 'LinkedIn',
+	// 	url: '',
+	// },
 ];

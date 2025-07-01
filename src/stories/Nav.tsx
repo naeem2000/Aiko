@@ -69,7 +69,7 @@ export default function Nav() {
 						})}
 				</ul>
 				<Button
-					label='Find a Reservation'
+					label={path === '/' ? 'Find a Reservation' : 'Book Now'}
 					color={buttonColor as 'blue' | 'gold' | 'red'}
 					className='hidden xl:block'
 				/>

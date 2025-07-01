@@ -25,7 +25,7 @@ export default function MenuItems() {
 							<div key={index} className='mt-9'>
 								<div className='flex justify-between items-center w-full'>
 									<div className='flex justify-between items-center w-full mr-7'>
-										<p className='text-3xl leading-[49px] tracking-[3%]'>
+										<p className='text-xl md:text-3xl leading-[49px] tracking-[3%]'>
 											{item.item}
 										</p>
 										<div className='h-[1px] w-[103px] bg-white' />

@@ -1,4 +1,6 @@
+'use client';
 import { ButtonColors } from '@/modules/types';
+import { usePathname } from 'next/navigation';
 import Button from './Button';
 import React from 'react';
 
@@ -19,6 +21,8 @@ export default function TextCard({
 	variant,
 	onClick,
 }: Props) {
+	const path = usePathname();
+
 	const colorScheme: string =
 		variant === 'blue'
 			? 'bg-[var(--blue)] text-white'
@@ -52,7 +56,11 @@ export default function TextCard({
 			>
 				{text}
 			</p>
-			<Button onClick={onClick} label='Learn More' color={buttonColor} />
+			<Button
+				onClick={onClick}
+				label={path === '/' ? 'Learn More' : 'View Full Menu'}
+				color={buttonColor}
+			/>
 		</div>
 	);
 }
