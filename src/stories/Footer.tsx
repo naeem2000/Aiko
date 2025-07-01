@@ -1,20 +1,41 @@
+'use client';
+import { usePathname } from 'next/navigation';
 import { socials } from '../../public/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
+	const path = usePathname();
+
+	const isHomeLogo: string =
+		path === '/'
+			? 'aiko-logo.png'
+			: path === '/aiko-plus'
+			? 'aiko-logo-plus.png'
+			: path === '/aiko-on-bree'
+			? 'aiko-logo-bree.png'
+			: path === '/aiko-riverland'
+			? 'aiko-riverland.png'
+			: '';
+
 	return (
-		<footer className='bg-[var(--blue)] pt-12 pb-6 mt-10'>
+		<footer
+			className={`${
+				path === '/' ? 'bg-[var(--blue)]' : 'bg-black'
+			} pt-12 pb-6 mt-10`}
+		>
 			<div className='max-width'>
 				<div className='flex items-center md:items-start justify-between flex-col lg:flex-row text-white gap-3 mb-14'>
 					<div>
-						<Image
-							src={'/logos/aiko-logo-gold.png'}
-							alt='aiko'
-							width={163}
-							height={43}
-						/>
+						{isHomeLogo && (
+							<Image
+								src={`/logos/${isHomeLogo}`}
+								width={163}
+								height={43}
+								alt='Aiko'
+							/>
+						)}
 						<div className='flex justify-center md:justify-start gap-6 mt-5'>
 							{socials.map((item, index) => {
 								return (

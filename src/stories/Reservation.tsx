@@ -1,10 +1,10 @@
 'use client';
 import { reservation } from '../../public/data';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Button from './Button';
 import Link from 'next/link';
 import React from 'react';
-import { usePathname } from 'next/navigation';
 
 export default function Reservation() {
 	const path = usePathname();
@@ -12,8 +12,10 @@ export default function Reservation() {
 	return (
 		<section className='py-20'>
 			<div className='max-width'>
-				<h2 className='text-center font-bold text-4xl xl:text-[50px] leading-[100%] tracking-[6%]'>
-					MAKE A RESERVATION
+				<h2 className='text-center font-bold text-4xl md:text-[40px] leading-[100%] tracking-[6%]'>
+					{path === '/'
+						? 'MAKE A RESERVATION'
+						: 'JOIN US AT A DIFFERENT BRANCH'}
 				</h2>
 				<div className='flex items-center justify-center gap-5 mt-14 flex-col md:flex-row'>
 					{reservation

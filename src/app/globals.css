@@ -29,6 +29,8 @@
 	/* Backgrounds */
 	--landing-bg: url('/images/landing-hero.png');
 	--plus-bg: url('/images/plus-hero.png');
+	--bree-bg: url('/images/bree-hero.png');
+	--riverland-bg: url('/images/riverland-hero.png');
 }
 
 html {
