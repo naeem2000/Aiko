@@ -17,7 +17,7 @@ export default function Reservation() {
 						? 'MAKE A RESERVATION'
 						: 'JOIN US AT A DIFFERENT BRANCH'}
 				</h2>
-				<div className='flex items-center justify-center gap-5 mt-14 flex-col md:flex-row'>
+				<div className='flex items-center justify-center gap-5 lg:gap-10 mt-14 flex-col md:flex-row'>
 					{reservation
 						.filter((item) => item.url !== path)
 						.map((item, index) => {
@@ -37,7 +37,7 @@ export default function Reservation() {
 										<Button
 											label={item.buttonText}
 											color='gold'
-											className='mt-11'
+											className='mt-5'
 										/>
 									</Link>
 								</div>
