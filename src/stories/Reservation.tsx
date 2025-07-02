@@ -10,7 +10,7 @@ export default function Reservation() {
 	const path = usePathname();
 
 	return (
-		<section className='py-20'>
+		<section id='visit' className='py-10 md:py-20'>
 			<div className='max-width'>
 				<h2 className='text-center font-bold text-4xl md:text-[40px] leading-[100%] tracking-[6%]'>
 					{path === '/'

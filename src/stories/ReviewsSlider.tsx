@@ -27,7 +27,7 @@ export default function ReviewsSlider() {
 					{reviews.map((item, index) => {
 						return (
 							<SwiperSlide key={index}>
-								<div className='flex items-center justify-start w-full flex-col h-[180px]'>
+								<div className='flex items-center justify-start w-full flex-col h-[230px] md:h-[180px]'>
 									<p className='text-lg leading-[100%] tracking-[3%] mb-5'>
 										{item.name}
 									</p>
