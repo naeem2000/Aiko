@@ -29,7 +29,7 @@ export default function Experience() {
 					<Loader />
 				</div>
 			)}
-			<section className='py-14 max-width'>
+			<section id='about' className='py-14 max-width'>
 				<h2 className='text-center font-[275] text-3xl leading-[100%] tracking-[3%]'>
 					Experience Premium Sushi
 				</h2>
@@ -52,7 +52,7 @@ export default function Experience() {
 						<Image
 							src={'/images/riverland-exp-2.png'}
 							alt='Sushi platter'
-							width={394}
+							width={381}
 							height={478}
 						/>
 					</div>

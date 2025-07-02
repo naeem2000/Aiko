@@ -3,8 +3,8 @@ import React from 'react';
 
 export default function Gallery() {
 	return (
-		<section className='bg-black py-20'>
-			<div className='max-w-7xl mx-auto flex flex-col gap-7 justify-center items-center px-4'>
+		<section id='gallery' className='bg-black py-14 lg:py-20'>
+			<div className='max-w-7xl mx-auto flex flex-col gap-5 lg:gap-7 justify-center items-center px-4'>
 				<div className='flex gap-7 flex-wrap justify-center items-center'>
 					{['plus-gal-1', 'plus-gal-2', 'plus-gal-3'].map((img, index) => (
 						<Image

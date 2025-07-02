@@ -33,7 +33,7 @@ export default function TextCard({
 			: '';
 	return (
 		<div
-			className={`${colorScheme} w-full max-w-[390px] h-full flex items-center justify-center flex-col px-9 py-16`}
+			className={`${colorScheme} w-full max-w-[381px] h-full flex items-center justify-center flex-col px-9 py-14`}
 		>
 			<h3
 				className={`${
