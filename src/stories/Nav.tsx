@@ -58,7 +58,7 @@ export default function Nav() {
 		>
 			<div className='max-width'>
 				<div
-					className={`flex justify-between items-start lg:items-center w-full relative ${
+					className={`flex justify-between items-center lg:items-center w-full relative ${
 						path === '/' ? 'flex-col' : 'flex-row'
 					}`}
 				>
@@ -119,40 +119,42 @@ export default function Nav() {
 					)}
 				</div>
 			</div>
-			<div
-				className={`fixed left-0 p-7 top-0 bottom-0 w-[300px] transition-all duration-300 ${isHome} block lg:hidden ${
-					isNavOpen ? 'translate-x-0' : '-translate-x-[100%]'
-				}`}
-			>
-				<Link href={'/'}>
-					{isHomeLogo && (
-						<Image
-							src={`/logos/${isHomeLogo}`}
-							width={path !== '/' ? 178 : 350}
-							height={82}
-							alt='Aiko'
-						/>
-					)}
-				</Link>
-				<ul className='flex flex-col gap-5 mt-14'>
-					{isHomeMenu.map((item, index) => {
-						return (
-							<li
-								key={index}
-								onClick={() => setIsNavOpen(false)}
-								className='hover:underline font-bold text-[14.09px] leading-[100%] tracking-[3%]'
-							>
-								<Link href={item.url}>{item.link}</Link>
-							</li>
-						);
-					})}
-				</ul>
-				<Button
-					label={path === '/' ? 'Find a Reservation' : 'Book Now'}
-					color={buttonColor as 'blue' | 'gold' | 'red'}
-					className='mt-13'
-				/>
-			</div>
+			{path !== '/' && (
+				<div
+					className={`fixed left-0 p-7 top-0 bottom-0 w-[300px] transition-all duration-300 ${isHome} block lg:hidden ${
+						isNavOpen ? 'translate-x-0' : '-translate-x-[100%]'
+					}`}
+				>
+					<Link href={'/'}>
+						{isHomeLogo && (
+							<Image
+								src={`/logos/${isHomeLogo}`}
+								width={path !== '/' ? 178 : 350}
+								height={82}
+								alt='Aiko'
+							/>
+						)}
+					</Link>
+					<ul className='flex flex-col gap-5 mt-14'>
+						{isHomeMenu.map((item, index) => {
+							return (
+								<li
+									key={index}
+									onClick={() => setIsNavOpen(false)}
+									className='hover:underline font-bold text-[14.09px] leading-[100%] tracking-[3%]'
+								>
+									<Link href={item.url}>{item.link}</Link>
+								</li>
+							);
+						})}
+					</ul>
+					<Button
+						label={path === '/' ? 'Find a Reservation' : 'Book Now'}
+						color={buttonColor as 'blue' | 'gold' | 'red'}
+						className='mt-13'
+					/>
+				</div>
+			)}
 		</nav>
 	);
 }
