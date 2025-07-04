@@ -1,8 +1,8 @@
-import ReviewsSlider from '@/stories/ReviewsSlider';
 import Experience from './components/Experience';
 import Reservation from '@/stories/Reservation';
 import MenuItems from './components/MenuItems';
 import Gallery from './components/Gallery';
+import Slider from '@/stories/Slider';
 import Hero from '@/stories/Hero';
 import { Metadata } from 'next';
 import React from 'react';
@@ -20,7 +20,7 @@ export default function page() {
 			<MenuItems />
 			<Gallery />
 			<Reservation />
-			<ReviewsSlider />
+			<Slider variant='reviews' />
 		</main>
 	);
 }
