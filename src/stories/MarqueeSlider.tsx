@@ -13,17 +13,19 @@ export default function MarqueeSlider() {
 	const images = [...marqueeImages, ...marqueeImages];
 
 	return (
-		<Marquee speed={50} loop={0} gradient={false}>
-			{images.map((image, index) => (
-				<div key={index} className='mx-4 my-10 mb-0 lg:my-20'>
-					<Image
-						width={396}
-						height={460}
-						src={`/images/gallery/${image}`}
-						alt={`Gallery Image ${index + 1}`}
-					/>
-				</div>
-			))}
-		</Marquee>
+		<div className='max-width'>
+			<Marquee speed={50} loop={0} gradient={false}>
+				{images.map((image, index) => (
+					<div key={index} className='mx-4 my-10 mb-0 lg:my-20'>
+						<Image
+							width={396}
+							height={460}
+							src={`/images/gallery/${image}`}
+							alt={`Gallery Image ${index + 1}`}
+						/>
+					</div>
+				))}
+			</Marquee>
+		</div>
 	);
 }
