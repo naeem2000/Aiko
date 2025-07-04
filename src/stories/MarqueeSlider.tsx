@@ -10,12 +10,10 @@ export default function MarqueeSlider() {
 		'plus-gal-2.png',
 	];
 
-	const images = [...marqueeImages, ...marqueeImages];
-
 	return (
 		<div className='max-width'>
 			<Marquee speed={50} loop={0} gradient={false}>
-				{images.map((image, index) => (
+				{marqueeImages.map((image, index) => (
 					<div key={index} className='mx-4 my-10 mb-0 lg:my-20'>
 						<Image
 							width={396}
