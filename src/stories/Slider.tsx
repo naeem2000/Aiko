@@ -56,7 +56,7 @@ export default function Slider({ variant }: Props) {
 		>
 			{imageSlider.map((item, index) => (
 				<SwiperSlide key={index}>
-					<div className='w-[330px] h-[384px] !ml-5 !mr-5 overflow-hidden rounded-lg shadow-md'>
+					<div className='w-[310px] h-[384px] !ml-5 overflow-hidden rounded-lg shadow-md'>
 						<Image
 							src={item}
 							alt={`slide-${index}`}
