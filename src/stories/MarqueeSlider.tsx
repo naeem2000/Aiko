@@ -10,20 +10,20 @@ export default function MarqueeSlider() {
 		'plus-gal-2.png',
 	];
 
+	const imagesCombo: string[] = [...marqueeImages, ...marqueeImages];
+
 	return (
-		<div className='max-width'>
-			<Marquee speed={50} loop={0} gradient={false}>
-				{marqueeImages.map((image, index) => (
-					<div key={index} className='mx-4 my-10 mb-0 lg:my-20'>
-						<Image
-							width={396}
-							height={460}
-							src={`/images/gallery/${image}`}
-							alt={`Gallery Image ${index + 1}`}
-						/>
-					</div>
-				))}
-			</Marquee>
-		</div>
+		<Marquee speed={50} loop={0} gradient={false}>
+			{imagesCombo.map((image, index) => (
+				<div key={index} className='mx-4 my-10 mb-0 lg:my-20'>
+					<Image
+						width={396}
+						height={460}
+						src={`/images/gallery/${image}`}
+						alt={`Gallery Image ${index + 1}`}
+					/>
+				</div>
+			))}
+		</Marquee>
 	);
 }
