@@ -10,14 +10,14 @@ export default function Footer() {
 
 	const isHomeLogo: string =
 		path === '/'
-			? 'aiko-logo.png'
+			? 'aiko-default.png'
 			: path === '/aiko-plus'
 			? 'aiko-logo-plus.png'
 			: path === '/aiko-on-bree'
 			? 'aiko-logo-bree.png'
 			: path === '/aiko-riverland'
 			? 'aiko-riverland.png'
-			: '';
+			: 'aiko-default.png';
 
 	return (
 		<footer
@@ -26,16 +26,44 @@ export default function Footer() {
 			} pt-12 pb-6 mt-10`}
 		>
 			<div className='max-width'>
-				<div className='flex items-center md:items-start justify-between flex-col lg:flex-row text-white gap-3 mb-14'>
-					<div>
+				<div className='flex items-center justify-between flex-col lg:flex-row text-white gap-3 mb-14'>
+					<div className='flex items-center justify-center gap-28'>
 						{isHomeLogo && (
-							<Image
-								src={`/logos/${isHomeLogo}`}
-								width={163}
-								height={43}
-								alt='Aiko'
-							/>
+							<div>
+								<Image
+									src={`/logos/${isHomeLogo}`}
+									width={163}
+									height={43}
+									alt='Aiko'
+								/>
+								<p className='font-normal text-sm leading-[20px] tracking-[3%] mt-5 text-center lg:text-left'>
+									premium sushi made with <br /> ultra-fresh ingredients
+								</p>
+							</div>
 						)}
+						<div className='text-[14.09px] leading-[100%] tracking-[3%] text-center md:text-left hidden lg:block'>
+							<p className='font-normal text-[14.09px] leading-[100%] tracking-[3%]'>
+								TRADING HOURS
+							</p>
+							<p className='font-normal text-[14.09px] leading-[20px] tracking-[3%] mt-5'>
+								MONDAY TO SUNDAY <br /> 11:30AM - 10PM <br /> Now open on
+								Sundays for season!
+							</p>
+						</div>
+					</div>
+					<div className='flex flex-col w-full max-w-[367px] text-center md:text-left'>
+						<label
+							className='text-base leading-6 tracking-[0%] text-center lg:text-left'
+							htmlFor='latest-menu'
+						>
+							See whats on our latest menu
+						</label>
+						<input
+							className='w-full mt-5'
+							placeholder='Email Address'
+							type='text'
+							id='latest-menu'
+						/>
 						<div className='flex justify-center md:justify-start gap-6 mt-5'>
 							{socials.map((item, index) => {
 								return (
@@ -50,52 +78,6 @@ export default function Footer() {
 								);
 							})}
 						</div>
-					</div>
-					<div className='text-[14.09px] leading-[100%] tracking-[3%] text-center md:text-left hidden lg:block'>
-						<p>New Location</p>
-						<p className='mb-5'>Street Name</p>
-						<p>On Bree</p>
-						<Link
-							href={'https://maps.app.goo.gl/qd2RDeLdun146dLLA'}
-							target='_blank'
-							className='hover:underline'
-						>
-							4 Bree St | Portside | Foreshore | Cape Town
-						</Link>
-						<p className='mt-5'>Riverland</p>
-						<p>Shop G02 Riverlands Mall</p>
-						<Link
-							href={'https://maps.app.goo.gl/cx7b5M1SeYVBc7tT7'}
-							target='_blank'
-							className='hover:underline'
-						>
-							51 Gogosoa St | Observatory | Cape Town
-						</Link>
-					</div>
-					<div className='flex flex-col gap-2 text-[14.09px] leading-[100%] tracking-[3%]'>
-						<Link className='hover:underline' href={'#about'}>
-							About
-						</Link>
-						<Link className='hover:underline' href={'#gallery'}>
-							Gallery
-						</Link>
-						<Link className='hover:underline' href={'#visit-us'}>
-							Visit Us
-						</Link>
-					</div>
-					<div className='flex flex-col w-full max-w-[367px] text-center md:text-left'>
-						<label
-							className='text-base leading-6 tracking-[0%]'
-							htmlFor='latest-menu'
-						>
-							See whats on our latest menu
-						</label>
-						<input
-							className='w-full mt-5'
-							placeholder='Email Address'
-							type='text'
-							id='latest-menu'
-						/>
 					</div>
 				</div>
 				<div className='w-full border-t border-t-[var(--border)] h-[1px]' />

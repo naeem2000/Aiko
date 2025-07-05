@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/nextjs';
-import ReviewsSlider from './ReviewsSlider';
+import MarqueeSlider from './MarqueeSlider';
 
 const meta = {
-	component: ReviewsSlider,
-} satisfies Meta<typeof ReviewsSlider>;
+	component: MarqueeSlider,
+} satisfies Meta<typeof MarqueeSlider>;
 
 export default meta;
 

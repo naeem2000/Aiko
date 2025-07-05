@@ -115,9 +115,10 @@ export const socials: SocialIcons = [
 		alt: 'Facebook',
 		url: 'https://www.facebook.com/aikosushi.sa',
 	},
-	// {
-	// 	image: '/social-icons/linkedIn.svg',
-	// 	alt: 'LinkedIn',
-	// 	url: '',
-	// },
+];
+
+export const imageSlider: string[] = [
+	'/images/about-1.png',
+	'/images/gallery/gallery-2.png',
+	'/images/about-2.png',
 ];
