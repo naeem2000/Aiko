@@ -71,8 +71,15 @@ export default function Footer() {
 										<Image
 											src={item.image}
 											alt={item.alt}
-											width={item.alt === 'Facebook' ? 10 : 18}
+											width={
+												item.alt === 'Facebook'
+													? 10
+													: 18 && item.alt === 'Tiktok'
+													? 18
+													: 18
+											}
 											height={16}
+											className='!text-white'
 										/>
 									</Link>
 								);

@@ -115,6 +115,11 @@ export const socials: SocialIcons = [
 		alt: 'Facebook',
 		url: 'https://www.facebook.com/aikosushi.sa',
 	},
+	{
+		image: '/social-icons/tiktok.svg',
+		alt: 'TikTok',
+		url: 'https://www.tiktok.com/discover/aiko-sushi-cape-town',
+	},
 ];
 
 export const imageSlider: string[] = [
