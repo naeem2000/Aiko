@@ -95,12 +95,24 @@ export default function Nav() {
 							})}
 						</ul>
 					</div>
-
-					<Button
-						label={path === '/' ? 'Find a Reservation' : 'Book Now'}
-						color={buttonColor as 'blue' | 'gold' | 'red'}
-						className='hidden lg:block'
-					/>
+					{path === '/' ? (
+						<Button
+							label='Find a Reservation'
+							color={buttonColor as 'blue' | 'gold' | 'red'}
+							className='hidden lg:block'
+						/>
+					) : (
+						<Link
+							href='https://www.dineplan.com/restaurants/aiko-sushi'
+							target='_blank'
+						>
+							<Button
+								label='Book Now'
+								color={buttonColor as 'blue' | 'gold' | 'red'}
+								className='hidden lg:block'
+							/>
+						</Link>
+					)}
 
 					<div className='block lg:hidden z-50 fixed right-5'>
 						<Hamburger

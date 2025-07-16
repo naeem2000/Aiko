@@ -74,7 +74,7 @@ export default function Footer() {
 											width={
 												item.alt === 'Facebook'
 													? 10
-													: 18 && item.alt === 'Tiktok'
+													: item.alt === 'Tiktok'
 													? 18
 													: 18
 											}
