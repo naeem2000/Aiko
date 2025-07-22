@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import PdfViewer from '@/stories/PdfViewer';
 import TextCard from '@/stories/TextCard';
 import Loader from '@/stories/Loader';
 import Image from 'next/image';
@@ -7,6 +8,7 @@ import Image from 'next/image';
 export default function Experience() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [showLoader, setShowLoader] = useState(true);
+	const [showPdfModal, setShowPdfModal] = useState(false);
 
 	useEffect(() => {
 		const timeout = setTimeout(() => {
@@ -19,7 +21,7 @@ export default function Experience() {
 	}, []);
 
 	return (
-		<>
+		<section className='relative'>
 			{showLoader && (
 				<div
 					className={`fixed inset-0 z-50 transition-opacity duration-500 ${
@@ -29,7 +31,14 @@ export default function Experience() {
 					<Loader />
 				</div>
 			)}
-			<section id='about' className='py-14 max-width'>
+			<PdfViewer
+				setShowPdfModal={setShowPdfModal}
+				src='/menus/main-menu.pdf'
+				buttonColor='blue'
+				showPdfModal={showPdfModal}
+			/>
+
+			<div id='about' className='py-14 max-width'>
 				<h2 className='text-center font-[275] text-3xl leading-[100%] tracking-[3%]'>
 					Experience Premium Sushi
 				</h2>
@@ -46,7 +55,8 @@ export default function Experience() {
 						buttonColor='blue'
 						heading='Taste Preparation'
 						subHeading='TRADITIONAL & MODERN'
-						text='Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.'
+						onClick={() => setShowPdfModal(true)}
+						text='Freshly made sushi delivers a perfect balance of tender fish, seasoned rice, and crisp vegetables. Each bite is a fresh, flavorful celebration of Japanese tradition.'
 					/>
 					<div>
 						<Image
@@ -57,7 +67,7 @@ export default function Experience() {
 						/>
 					</div>
 				</div>
-			</section>
-		</>
+			</div>
+		</section>
 	);
 }

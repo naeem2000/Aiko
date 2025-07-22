@@ -3,11 +3,15 @@ export type NavLinks = {
 	url: string;
 }[];
 
-export type Menu = {
+interface MenuItem {
 	item: string;
 	description: string;
 	price: string;
-}[];
+}
+
+export type Menu = {
+	[key: string]: MenuItem[];
+};
 
 export type Reservation = {
 	url: string;
