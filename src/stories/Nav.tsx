@@ -95,12 +95,29 @@ export default function Nav() {
 							})}
 						</ul>
 					</div>
-
-					<Button
-						label={path === '/' ? 'Find a Reservation' : 'Book Now'}
-						color={buttonColor as 'blue' | 'gold' | 'red'}
-						className='hidden lg:block'
-					/>
+					{path === '/' ? (
+						<Link
+							href='https://www.dineplan.com/restaurants/aiko-sushi'
+							target='_blank'
+						>
+							<Button
+								label='Find a Reservation'
+								color={buttonColor as 'blue' | 'gold' | 'red'}
+								className='hidden lg:block'
+							/>
+						</Link>
+					) : (
+						<Link
+							href='https://www.dineplan.com/restaurants/aiko-sushi'
+							target='_blank'
+						>
+							<Button
+								label='Book Now'
+								color={buttonColor as 'blue' | 'gold' | 'red'}
+								className='hidden lg:block'
+							/>
+						</Link>
+					)}
 
 					<div className='block lg:hidden z-50 fixed right-5'>
 						<Hamburger
@@ -143,11 +160,16 @@ export default function Nav() {
 						);
 					})}
 				</ul>
-				<Button
-					label={path === '/' ? 'Find a Reservation' : 'Book Now'}
-					color={buttonColor as 'blue' | 'gold' | 'red'}
-					className='mt-13'
-				/>
+				<Link
+					href='https://www.dineplan.com/restaurants/aiko-sushi'
+					target='_blank'
+				>
+					<Button
+						label={path === '/' ? 'Find a Reservation' : 'Book Now'}
+						color={buttonColor as 'blue' | 'gold' | 'red'}
+						className='mt-13'
+					/>
+				</Link>
 			</div>
 		</nav>
 	);

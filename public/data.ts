@@ -26,47 +26,78 @@ export const menuLink: { link: string; url: string } = {
 	url: '#menu',
 };
 
-export const menu: Menu = [
-	{
-		item: 'MENU ITEM 1',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
-		price: 'R00.00',
-	},
-	{
-		item: 'MENU ITEM 2',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
-		price: 'R00.00',
-	},
-	{
-		item: 'MENU ITEM 3',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
-		price: 'R00.00',
-	},
-	{
-		item: 'MENU ITEM 4',
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi',
-		price: 'R00.00',
-	},
-];
+export const menu: Menu = {
+	bree: [
+		{
+			item: 'Pretty Women',
+			description: 'Prawn Tempura, Avo, Caviar, Seaweed, Mayo',
+			price: 'From R139.00',
+		},
+		{
+			item: 'Grand Salmon Roses (4pcs)',
+			description: 'Salmon, Sesame Oil, Spring Onion, 7 Spice, Bread Crumbs',
+			price: 'From R145.00',
+		},
+		{
+			item: 'Bloom of Roses',
+			description:
+				'Seared salmon roses with: tuna, prawn and salmon topping, mayo, spring onion and 7 spice',
+			price: 'From R179.00',
+		},
+		{
+			item: 'Sashimi Rolls (6pcs)',
+			description: 'Salmon, seared tuna, avo, mayo, caviar, teriyaki sauce',
+			price: 'From R189.00',
+		},
+		{
+			item: 'Toranj (8pcs)',
+			description:
+				'Salmon, cream cheese, avo, beetroot, prawn and spices topping',
+			price: 'From R159.00',
+		},
+	],
+	plus: [
+		{
+			item: 'Sushi Taco – Swordfish Fusion',
+			description:
+				'Crispy taco shell filled with swordfish, kissed with unagi sauce, balsamic pearls, truffle mayo, and a fresh chive ribbon.',
+			price: 'R95.00',
+		},
+		{
+			item: 'Prawn tempura Bao Bun',
+			description:
+				'Melt-in-your-mouth pork belly glazed to perfection, served in a soft bao bun.',
+			price: 'R95.00',
+		},
+		{
+			item: 'Crispy Chicken Bao Bun',
+			description:
+				'Crispy, juicy chicken nestled in a fluffy bao with our signature Asian slaw.',
+			price: 'R85.00',
+		},
+		{
+			item: 'Glazed beef Bad Bun',
+			description:
+				'Unagi glazed beef topped with spring onion, roasted sesame seed and Japanese mayo',
+			price: 'R105.00',
+		},
+	],
+};
 
 export const reservation: Reservation = [
 	{
 		url: '/aiko-plus',
-		image: '/images/aiko-plus.png',
+		image: '/images/plus-link.png',
 		buttonText: 'Aiko Plus',
 	},
 	{
 		url: '/aiko-on-bree',
-		image: '/images/aiko-on-bree.png',
+		image: '/images/bree-link.png',
 		buttonText: 'Aiko On Bree',
 	},
 	{
 		url: '/aiko-riverland',
-		image: '/images/aiko-riverland.png',
+		image: '/images/riverland-link.png',
 		buttonText: 'Aiko Sushi Riverland',
 	},
 ];
@@ -114,6 +145,11 @@ export const socials: SocialIcons = [
 		image: '/social-icons/facebook.svg',
 		alt: 'Facebook',
 		url: 'https://www.facebook.com/aikosushi.sa',
+	},
+	{
+		image: '/social-icons/tiktok.svg',
+		alt: 'TikTok',
+		url: 'https://www.tiktok.com/discover/aiko-sushi-cape-town',
 	},
 ];
 
