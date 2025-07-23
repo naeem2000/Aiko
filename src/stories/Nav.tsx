@@ -61,7 +61,7 @@ export default function Nav() {
 		<nav
 			className={`${
 				path === '/' ? 'bg-white ' : 'absolute left-0 right-0 top-0'
-			} py-5 xl:py-12 z-50 text-white`}
+			} py-5 xl:py-8 z-50 text-white`}
 		>
 			<div className='max-width'>
 				<div

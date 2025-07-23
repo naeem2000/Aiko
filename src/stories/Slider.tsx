@@ -1,7 +1,7 @@
 'use client';
 import { imageSlider, reviews } from '../../public/data';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import Ratings from './Ratings';
 import Image from 'next/image';
 import 'swiper/css/navigation';
@@ -22,12 +22,13 @@ export default function Slider({ variant }: Props) {
 				Here’s what people are saying
 			</h2>
 			<Swiper
-				modules={[Pagination]}
+				modules={[Pagination, Autoplay]}
 				spaceBetween={50}
 				slidesPerView={1}
 				autoplay
+				speed={700}
 				pagination={{ clickable: true }}
-				className='mt-14'
+				className='mt-14 cursor-grab'
 			>
 				{reviews.map((item, index) => {
 					return (
