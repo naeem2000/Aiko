@@ -13,7 +13,7 @@ export default function Hero({ bg }: Props) {
 			className={`relative bg-center bg-cover bg-no-repeat h-screen`}
 			style={{ backgroundImage: `var(${bg})` }}
 		>
-			<div className='absolute right-0 left-0 bottom-0 top-0 bg-[rgb(0,0,0,0.7)] z-10' />
+			<div className='absolute right-0 left-0 bottom-0 top-0 bg-[rgb(0,0,0,0.5)] z-10' />
 			{path === '/' && (
 				<div className='flex items-center justify-center flex-col h-full w-full z-20 relative'>
 					<h2 className='font-[275] text-2xl xl:text-3xl leading-[100%] tracking-[3%] text-white'>
