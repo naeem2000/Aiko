@@ -87,12 +87,12 @@ export const menu: Menu = {
 export const reservation: Reservation = [
 	{
 		url: '/aiko-plus',
-		image: '/images/plus-link.png',
+		image: '/images/aiko-plus.png',
 		buttonText: 'Aiko Plus',
 	},
 	{
 		url: '/aiko-on-bree',
-		image: '/images/bree-link.png',
+		image: '/images/aiko-on-bree.png',
 		buttonText: 'Aiko On Bree',
 	},
 	{
