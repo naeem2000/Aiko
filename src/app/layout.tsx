@@ -1,10 +1,7 @@
-'use client';
-
 import { Poppins } from 'next/font/google';
 import Footer from '@/stories/Footer';
 import Nav from '@/stories/Nav';
 import './globals.css';
-import Script from 'next/script';
 
 const poppins = Poppins({
 	subsets: ['latin'],
