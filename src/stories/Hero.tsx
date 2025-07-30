@@ -22,20 +22,6 @@ export default function Hero({ bg }: Props) {
 					<h1 className="max-w-[629px] font-['Carattere'] text-6xl xl:text-[92.18px] leading-[100%] tracking-[6%] text-center mt-8 text-white">
 						The Aiko Experience
 					</h1>
-					<h3 className='font-bolder text-2xl xl:text-2xl leading-[100%] tracking-[3%] text-white'>
-						Expertly crafted at all 3 of our signature locations
-					</h3>
-					<p className='font-[275] text-2xl xl:text-xl leading-[100%] tracking-[3%] text-white'>
-						<strong>Aiko on bree: </strong>Aiko orginal sushi.
-					</p>
-					<p className='font-[275] text-2xl xl:text-xl leading-[100%] tracking-[3%] text-white'>
-						<strong>Aiko Riverlands:</strong> Aikos ramen and signatures crafted
-						to excellence.
-					</p>
-					<p className='font-[275] text-2xl xl:text-xl leading-[100%] tracking-[3%] text-white'>
-						<strong>Aiko Plus, 70 Bree Street:</strong> Sushi meets art on a
-						plate.
-					</p>
 				</div>
 			)}
 		</section>
